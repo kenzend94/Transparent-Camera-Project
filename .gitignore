@@ -1,0 +1,6 @@
+# Ignore any vscode files
+.vscode/
+
+# Ignore all jpg and png files
+*.png
+*.jpg
