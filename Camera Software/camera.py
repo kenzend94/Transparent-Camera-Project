@@ -1,3 +1,13 @@
+'''
+camera.py
+
+This script contains all of the code necessary to run the transparent camera.
+
+Authors:  Kenneth Gordon, Khoi Ngyuen, and Thomas Warren
+Date: 4/26/24
+'''
+
+# Necessary imports
 import subprocess
 from picamera2 import Picamera2, Preview
 from time import sleep
@@ -12,19 +22,20 @@ counter_value = 0 # Initialize counter_value
 
 # Define the name of the saved data (ie: subject name)
 # This should be moved to our settings.xml file eventually
-IMAGE_ID = "environment"
+IMAGE_ID = "replace_me"
 
 # Create a flag to toggle the camera's preview
 # This should also be moved to settings.xml eventually
 ENABLE_PREVIEW = True
 
 # Define how many photos we want to take from the camera
-NUMBER_OF_CAPTURES = 50
+NUMBER_OF_CAPTURES = 10
 
-# Print available camera information
-print('List of available camera: ', Picamera2.global_camera_info())
+'''
+create_settings_xml()
 
-# Function to create settings.xml with initial counter value
+This function creates a setting.xml file with an initial counter value at the settings_filename global variable.
+'''
 def create_settings_xml(counter_value, filename = settings_filename):
     root = ET.Element('Settings')
     counter = ET.SubElement(root, 'Counter')
@@ -32,14 +43,25 @@ def create_settings_xml(counter_value, filename = settings_filename):
     tree = ET.ElementTree(root)
     tree.write(filename)
 
-# Function to read counter value from settings.xml
+'''
+read_settings_xml()
+
+This function reads the counter value from settings.xml and stores it in the counter_value global variable.
+'''
 def read_settings_xml(filename=settings_filename):
     tree = ET.parse(filename)
     root = tree.getroot()
     counter_value = int(root.find('Counter').text)
     return counter_value
 
-def make_archive(IMAGE_ID="environment"):
+'''
+make_archive()
+
+Function that takes the photos stored in the Front and Side folders and zips them.
+
+The zipped archive is then moved to the camera's website path to be downloaded.
+'''
+def make_archive(IMAGE_ID):
     # Get the current directory
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -78,6 +100,11 @@ def make_archive(IMAGE_ID="environment"):
     except subprocess.CalledProcessError as e:
         print("Failed to create or copy archive: ", e)
 
+'''
+main()
+
+Function that takes photos using the transparent camera.
+'''
 def main():
     # Check if settings.xml exist
     if not os.path.exists(settings_filename):
@@ -155,7 +182,7 @@ def main():
     picam0.stop()
     picam1.stop()
 
-    # Make an archieve of the images
+    # Make an archive of the images and upload it to the camera's website
     make_archive(IMAGE_ID)
 
 if __name__ == "__main__":
