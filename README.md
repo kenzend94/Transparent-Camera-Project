@@ -1,4 +1,4 @@
-# Transparent Camera  Project
+# Transparent Camera Project
 
 A brief description of the project should go here.
 
