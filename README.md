@@ -2,8 +2,6 @@
 
 A brief description of the project should go here.
 
-Maybe link to the paper eventually?
-
 Each folder in this project contains a README.md detailing the contents of the folder as well as instructions on how to use the files in the folder if needed.
 
 # Contents
@@ -11,6 +9,7 @@ Each folder in this project contains a README.md detailing the contents of the f
 - Camera Software:  This folder contains the software used to capture images for the training and testing of the transparent camera.
 - Eye Tracking Software:  This folder contains the eye tracking software used in this project.
 - Pix2PixHD:  This folder contains the modified pix2pixHD model that was used in this project.
+- Utilities:  This folder contains utility scripts that have helped the project progress but are not necessary to the project.
 
 # Move this to the Pix2PixHD folder
 4.) Pix2PixHD Use in the Transparent Camera  
