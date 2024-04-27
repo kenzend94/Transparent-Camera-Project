@@ -8,13 +8,13 @@ Date: 4/26/24
 '''
 
 # Necessary imports
-import subprocess
+from datetime import datetime
 from picamera2 import Picamera2, Preview
 from time import sleep
 import libcamera
 import os
+import subprocess
 import xml.etree.ElementTree as ET
-from datetime import datetime
 
 # Global config
 settings_filename = 'settings.xml' # currently uses the settings.xml present on the desktop!
