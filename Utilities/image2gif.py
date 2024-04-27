@@ -14,10 +14,10 @@ from natsort import natsorted # Used to sort the png files in order after they a
 import glob
 
 # Global configuration variables
-frame_folder = "C:/Users/Kenneth/Desktop/ECE5960/Training Results/UNet"
-frame_file_type = ".png"
-gif_location = "C:/Users/Kenneth/Desktop/ECE5960/Training Results"
-gif_name = "face_training"
+frame_folder = "put_your_directory_here"
+frame_file_type = ".EXTENSION"
+gif_location = "put_your_directory_here"
+gif_name = "put_your_name_here"
 gif_duration = 200
 
 '''

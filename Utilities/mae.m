@@ -1,5 +1,5 @@
 %% MAE
-% Simple MAE script to calculate the MAE of two images.
+% Simple MATLAB script to calculate the MAE of two images.
 % You could do this in Python but its really easy to do in MATLAB.
 %
 % Author: Kenneth Gordon

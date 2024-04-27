@@ -9,12 +9,13 @@ Author:  Kenneth Gordon
 Date:  April 19, 2024
 '''
 
+# Necessary imports
 import cv2
 import os
 
 # Global configuration variables
-input_image_directory = "C:/Users/kgord/Downloads/environment2/Side"
-output_image_directory = "C:/Users/kgord/Downloads/downscaled_environment2/Side"
+input_image_directory = "put_your_directory_here"
+output_image_directory = "put_your_directory_here"
 x_resize = 1152
 y_resize = 648
 
