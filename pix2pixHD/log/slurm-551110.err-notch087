@@ -1,0 +1,13 @@
+/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/models/networks.py:95: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  fake_tensor = self.Tensor(input.size()).fill_(self.fake_label)
+Traceback (most recent call last):
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/train.py", line 103, in <module>
+    visualizer.print_current_errors(epoch, epoch_iter, errors, t)
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/util/visualizer.py", line 109, in print_current_errors
+    with open(self.log_name, "a") as log_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './checkpoints/environment_pix2pix/loss_log.txt'

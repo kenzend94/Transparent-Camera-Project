@@ -1,0 +1,35 @@
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch004//job534118/slurm_script: line 50: conda: command not found
+/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/vgg19-dcbb9e9d.pth" to /uufs/chpc.utah.edu/common/home/u1140015/.cache/torch/hub/checkpoints/vgg19-dcbb9e9d.pth
+  0%|          | 0.00/548M [00:00<?, ?B/s]  2%|▏         | 8.45M/548M [00:00<00:06, 88.6MB/s]  3%|▎         | 16.9M/548M [00:00<00:07, 77.7MB/s]  5%|▍         | 25.1M/548M [00:00<00:06, 81.2MB/s]  6%|▌         | 33.6M/548M [00:00<00:06, 78.8MB/s]  8%|▊         | 41.1M/548M [00:00<00:07, 70.9MB/s] 10%|▉         | 53.6M/548M [00:00<00:05, 88.9MB/s] 11%|█▏        | 62.5M/548M [00:00<00:05, 90.0MB/s] 13%|█▎        | 71.3M/548M [00:00<00:05, 89.2MB/s] 15%|█▍        | 80.0M/548M [00:00<00:05, 89.8MB/s] 16%|█▌        | 88.8M/548M [00:01<00:05, 90.4MB/s] 18%|█▊        | 97.5M/548M [00:01<00:05, 84.6MB/s] 19%|█▉        | 106M/548M [00:01<00:05, 82.1MB/s]  21%|██        | 114M/548M [00:01<00:05, 83.3MB/s] 22%|██▏       | 122M/548M [00:01<00:05, 84.7MB/s] 24%|██▍       | 130M/548M [00:01<00:05, 82.1MB/s] 25%|██▌       | 138M/548M [00:01<00:05, 72.2MB/s] 27%|██▋       | 145M/548M [00:01<00:06, 67.1MB/s] 28%|██▊       | 153M/548M [00:02<00:05, 71.0MB/s] 29%|██▉       | 162M/548M [00:02<00:05, 75.3MB/s] 31%|███       | 169M/548M [00:02<00:05, 74.4MB/s] 32%|███▏      | 178M/548M [00:02<00:04, 78.9MB/s] 34%|███▍      | 185M/548M [00:02<00:05, 70.7MB/s] 35%|███▌      | 192M/548M [00:02<00:05, 71.3MB/s] 36%|███▋      | 200M/548M [00:02<00:04, 73.9MB/s] 38%|███▊      | 208M/548M [00:02<00:04, 77.0MB/s] 39%|███▉      | 216M/548M [00:02<00:04, 76.2MB/s] 41%|████      | 223M/548M [00:02<00:04, 71.5MB/s] 42%|████▏     | 232M/548M [00:03<00:04, 77.1MB/s] 44%|████▍     | 240M/548M [00:03<00:03, 80.9MB/s] 45%|████▌     | 249M/548M [00:03<00:03, 84.3MB/s] 47%|████▋     | 257M/548M [00:03<00:03, 84.6MB/s] 48%|████▊     | 266M/548M [00:03<00:03, 85.3MB/s] 50%|████▉     | 274M/548M [00:03<00:03, 79.9MB/s] 51%|█████▏    | 282M/548M [00:03<00:03, 80.8MB/s] 53%|█████▎    | 291M/548M [00:03<00:03, 83.9MB/s] 55%|█████▍    | 299M/548M [00:03<00:03, 86.5MB/s] 56%|█████▌    | 308M/548M [00:04<00:03, 78.5MB/s] 58%|█████▊    | 316M/548M [00:04<00:03, 79.6MB/s] 59%|█████▉    | 324M/548M [00:04<00:02, 82.1MB/s] 61%|██████    | 332M/548M [00:04<00:02, 80.5MB/s] 62%|██████▏   | 340M/548M [00:04<00:02, 80.4MB/s] 63%|██████▎   | 348M/548M [00:04<00:02, 76.6MB/s] 65%|██████▍   | 356M/548M [00:04<00:02, 79.6MB/s] 66%|██████▋   | 364M/548M [00:04<00:02, 73.6MB/s] 68%|██████▊   | 372M/548M [00:04<00:02, 78.1MB/s] 69%|██████▉   | 380M/548M [00:05<00:02, 80.6MB/s] 71%|███████   | 389M/548M [00:05<00:01, 83.4MB/s] 73%|███████▎  | 397M/548M [00:05<00:01, 84.7MB/s] 74%|███████▍  | 406M/548M [00:05<00:02, 69.5MB/s] 76%|███████▌  | 414M/548M [00:05<00:01, 75.3MB/s] 77%|███████▋  | 423M/548M [00:05<00:01, 80.0MB/s] 79%|███████▊  | 432M/548M [00:05<00:01, 81.8MB/s] 80%|████████  | 440M/548M [00:05<00:01, 84.1MB/s] 82%|████████▏ | 448M/548M [00:05<00:01, 84.2MB/s] 83%|████████▎ | 456M/548M [00:06<00:01, 78.2MB/s] 85%|████████▍ | 465M/548M [00:06<00:01, 82.0MB/s] 86%|████████▋ | 474M/548M [00:06<00:00, 84.5MB/s] 88%|████████▊ | 482M/548M [00:06<00:00, 81.5MB/s] 89%|████████▉ | 490M/548M [00:06<00:00, 82.0MB/s] 91%|█████████ | 499M/548M [00:06<00:00, 86.2MB/s] 93%|█████████▎| 508M/548M [00:06<00:00, 87.7MB/s] 94%|█████████▍| 517M/548M [00:06<00:00, 84.0MB/s] 96%|█████████▌| 525M/548M [00:06<00:00, 79.8MB/s] 97%|█████████▋| 533M/548M [00:06<00:00, 83.2MB/s] 99%|█████████▉| 541M/548M [00:07<00:00, 83.4MB/s]100%|██████████| 548M/548M [00:07<00:00, 79.9MB/s]
+/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/models/networks.py:95: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  fake_tensor = self.Tensor(input.size()).fill_(self.fake_label)
+Traceback (most recent call last):
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/train.py", line 70, in <module>
+    losses, generated = model(Variable(data['label']), Variable(data['inst']), 
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 183, in forward
+    return self.module(*inputs[0], **module_kwargs[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/models/pix2pixHD_model.py", line 170, in forward
+    pred_real = self.discriminate(input_label, real_image)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/models/pix2pixHD_model.py", line 145, in discriminate
+    input_concat = torch.cat((input_label, test_image.detach()), dim=1)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 768 but got size 576 for tensor number 1 in the list.

@@ -1,0 +1,24 @@
+/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/models/networks.py:95: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  fake_tensor = self.Tensor(input.size()).fill_(self.fake_label)
+Traceback (most recent call last):
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/train.py", line 117, in <module>
+    model.module.save('latest')            
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/models/pix2pixHD_model.py", line 274, in save
+    self.save_network(self.netG, 'G', which_epoch, self.gpu_ids)
+  File "/uufs/chpc.utah.edu/common/home/u1140015/pix2pixHD/models/base_model.py", line 45, in save_network
+    torch.save(network.cpu().state_dict(), save_path)
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/uufs/chpc.utah.edu/common/home/u1140015/software/pkg/miniconda3/envs/pix2pix_env/lib/python3.12/site-packages/torch/serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: File ./checkpoints/environment_pix2pix/latest_net_G.pth cannot be opened.
