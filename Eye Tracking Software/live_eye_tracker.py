@@ -21,7 +21,7 @@ import numpy as np # For general purpose number work
 ENABLE_EYE_OUTLINES = True
 
 # The location of the model file
-MODEL_PATH = r"C:\Users\kgord\Desktop\ECE5960\working_directory\eye_tracking\model\model68_GTX.dat"
+MODEL_PATH = r"insert_the_path_to_your_model_here"
 
 '''
 shape_to_np()

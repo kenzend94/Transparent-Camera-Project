@@ -23,21 +23,19 @@ import os          # For working with paths
 ENABLE_EYE_OUTLINES = True
 
 # The location of the model file
+# This could be improved to not be dependent on the working directory of the terminal.
 MODEL_PATH = os.path.join(os.getcwd(), 'model\\model68_GTX.dat')
 
 # The location of the input images
+# This could be improved to not be dependent on the working directory of the terminal.
 INPUT_LOCATION = os.path.join(os.getcwd(), 'images\\raw')
 
 # The location to save images
+# This could be improved to not be dependent on the working directory of the terminal.
 SAVE_LOCATION = os.path.join(os.getcwd(), 'images\\processed')
 
 # The threshold value to apply to the mask
-THRESHOLD = 78
-
-# Threshold Notes:
-# 78 seems to work best of Kenneth
-# 35 seems to work best for Khoi
-# ?? seems to work best for Thomas 
+THRESHOLD = 78 # play with this value if your eye tracking is too sensitive or not sensitive enough
 
 '''
 shape_to_np()
